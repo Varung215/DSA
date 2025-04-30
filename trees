@@ -23,9 +23,9 @@ public class trees {
             }
 
             cur = stack.pop();
-            System.out.print(curr.val + " ");
+            System.out.print(cur.val + " ");
 
-            cur = curr.right;
+            cur = cur.right;
         }
     }
 
