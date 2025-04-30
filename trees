@@ -1,10 +1,10 @@
 import java.util.Stack;
 
-class TreeNode {
+class treeNode {
     int val;
-    TreeNode left, right;
+    treeNode left, right;
 
-    TreeNode(int val) {
+    treeNode(int val) {
         this.val = val;
         left = right = null;
     }
@@ -12,9 +12,9 @@ class TreeNode {
 
 public class trees {
 
-    public static void inorderIterative(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode cur = root;
+    public static void inorderIterative(treeNode root) {
+        Stack<treeNode> stack = new Stack<>();
+        treeNode cur = root;
 
         while (cur != null || !stack.isEmpty()) {
             while (cur != null) {
@@ -31,11 +31,11 @@ public class trees {
 
     public static void main(String[] args) {
 
-        TreeNode root = new TreeNode(8);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(5);
-        root.left.left = new TreeNode(3);
-        root.left.right = new TreeNode(7);
+        treeNode root = new treeNode(8);
+        root.left = new treeNode(9);
+        root.right = new treeNode(5);
+        root.left.left = new treeNode(3);
+        root.left.right = new treeNode(7);
 
         System.out.println("The inorder traversal is:");
         inorderIterative(root);
